@@ -1,0 +1,25 @@
+/* src/components/Body.scss */
+.body {
+  padding: 20px 20px 0; /* Убираем нижний отступ */
+  display: flex;
+  flex-direction: column; /* Меняем направление на вертикальное */
+  align-items: center;
+  width: 100%; /* Заставляем контейнер занимать всю ширину */
+  background-image: url('../../assets/img/background.jpg'); /* Путь к изображению */
+  background-size: cover; /* Растягиваем изображение на весь контейнер */
+  background-position: center; /* Центрируем изображение */
+  background-repeat: no-repeat; /* Запрещаем повторение изображения */
+}
+
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; /* Заставляем контейнер занимать всю ширину */
+}
+
+.about-company {
+  flex: 1;
+  margin-right: 20px;
+  width: 30%; /* Заставляем компонент занимать 30% ширины */
+}
+

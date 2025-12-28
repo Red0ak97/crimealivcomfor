@@ -1,0 +1,29 @@
+/* src/components/aboutCompany/AboutCompany.scss */
+.about-company {
+  flex: 1;
+  margin-right: 20px;
+  width: 30%; /* Заставляем компонент занимать 30% ширины */
+
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: disc; /* Используем маркеры списка */
+    padding-left: 20px; /* Добавляем отступ для маркеров */
+  }
+
+  li {
+    margin-bottom: 5px;
+  }
+}

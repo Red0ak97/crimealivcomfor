@@ -1,0 +1,36 @@
+/* src/components/Header.scss */
+.header {
+  background-color: #333; /* Темный фон */
+  color: white; /* Белый текст */
+  padding: 20px;
+  display: flex;
+  flex-direction: column; /* Меняем направление на вертикальное */
+  justify-content: space-between;
+
+  .header-content {
+    flex: 1;
+    text-align: center; /* Выравниваем текст по центру */
+  }
+
+  .header-nav {
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: space-around;
+      width: 100%; /* Растягиваем на всю ширину */
+      padding: 0 20px; /* Добавляем внутренние отступы для контейнера кнопок */
+
+      li {
+        flex: 1; /* Равномерное распределение по ширине */
+        margin: 0; /* Убираем отступы между кнопками */
+      }
+
+      /* Добавляем стили для последней кнопки */
+      li:last-child {
+        flex-grow: 1; /* Заставляем последнюю кнопку занимать оставшееся пространство */
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+/* index.scss */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f400;
+  position: relative; /* Добавляем относительное позиционирование */
+}
+
+section {
+  padding: 10px;
+}
+
+/* Стили для кнопок */
+.wrapper{
+  display: block;
+  margin-top: 20px; /* Добавляем отступ сверху */
+}
+
+
+.button{
+  display: block;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #ffffff;
+  border: 2px solid #ffffff00;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all .35s;
+  z-index: 1; /* Добавляем z-index для кнопки */
+}
+
+.button span{
+  position: relative;
+  z-index: 2; /* Добавляем z-index для текста кнопки */
+}
+
+.button:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #0040ff;
+  transition: all .35s;
+  z-index: -1; /* Добавляем z-index для псевдоэлемента */
+}
+
+.button:hover{
+  color: #fff;
+}
+
+.button:hover:after{
+  width: 100%;
+}
+
+/* Обновлённые стили для .wrapper */
+.wrapper{
+  display: block;
+  margin-top: 20px; /* Добавляем отступ сверху */
+}
