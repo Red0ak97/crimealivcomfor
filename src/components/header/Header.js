@@ -6,10 +6,12 @@ const Header = () => {
   return (
     <header className="header">
       <div className="header-content">
+        <div className="header-logo-container">
+          <img src="/favicon.ico" alt="Логотип" className="header-logo" />{' '}
+          {/* Добавляем иконку */}
+        </div>
         <h1>ООО «КРЫМЖИЛКОМФОРТ»</h1>
-        <p>
-          Строительство, реконструкция и реставрация объектов любой сложности
-        </p>
+        <p></p>
       </div>
       <nav className="header-nav">
         <ul>
@@ -34,7 +36,6 @@ const Header = () => {
               </Link>
             </div>
           </li>
-
           <li>
             <div className="wrapper">
               <Link to="/about" className="button">

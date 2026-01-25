@@ -50,7 +50,7 @@ section {
   left: 0;
   width: 0;
   height: 100%;
-  background: #0040ff;
+  background: #abb1c3;
   transition: all 0.35s;
   z-index: -1; /* Добавляем z-index для псевдоэлемента */
 }

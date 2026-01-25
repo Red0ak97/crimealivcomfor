@@ -25,6 +25,7 @@
   .contact-form-container {
     flex: 1;
     margin-left: 20px;
+    margin-right: 20px; /* Добавляем отступ справа */
     width: 90%; /* Заставляем компонент занимать всю ширину */
 
     form {
@@ -38,7 +39,8 @@
         display: block; /* Делаем метки блочными элементами */
       }
 
-      input, textarea {
+      input,
+      textarea {
         padding: 10px;
         margin-bottom: 15px;
         border: 2px solid #ccc;
@@ -52,7 +54,6 @@
           outline: none;
         }
       }
-
     }
   }
 }
