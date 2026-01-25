@@ -9,17 +9,19 @@
   background-size: cover; /* Растягиваем изображение на весь контейнер */
   background-position: center; /* Центрируем изображение */
   background-repeat: no-repeat; /* Запрещаем повторение изображения */
+  box-sizing: border-box; /* Учитываем внутренние отступы и границы */
 }
 
 .content-container {
   display: flex;
   justify-content: space-between;
   width: 100%; /* Заставляем контейнер занимать всю ширину */
+  box-sizing: border-box; /* Учитываем внутренние отступы и границы */
 }
 
 .about-company {
-  flex: 1;
+  flex: 1; /* Равномерно распределяем пространство */
   margin-right: 20px;
   width: 30%; /* Заставляем компонент занимать 30% ширины */
+  box-sizing: border-box; /* Учитываем внутренние отступы и границы */
 }
-
