@@ -10,10 +10,10 @@
     margin-bottom: 10px;
   }
 
-  p {
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 15px;
+  h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
   }
 
   ul {
@@ -25,5 +25,22 @@
 
   li {
     margin-bottom: 5px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+
+  /* Минималистичные стили для ссылок */
+  .link {
+    color: black; /* Серый цвет текста */
+    text-decoration: underline; /* Подчеркиваем текст */
+    transition: all 0.3s ease-in-out; /* Анимация перехода цвета */
+
+    &:hover {
+      color: grey; /* Темнеет при наведении */
+    }
   }
 }

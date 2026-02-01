@@ -1,3 +1,4 @@
+
 /* index.scss */
 body {
   font-family: Arial, sans-serif;
@@ -81,3 +82,50 @@ footer {
   width: 100%; /* Заставляем футер занимать всю ширину */
   box-sizing: border-box; /* Учитываем внутренние отступы и границы */
 }
+
+/* Универсальные стили для всех ссылок */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  text-decoration: none;
+}
+
+a {
+  color: currentColor; /* Использует текущий цвет родителя */
+  text-decoration: none; /* Убирает подчеркивание по умолчанию */
+  cursor: pointer; /* Курсор превращается в руку при наведении */
+  transition: all 0.3s ease; /* Мягкий эффект при переходе */
+
+  &:hover,
+  &:focus {
+    opacity: 0.8; /* Легкое затемнение при наведении */
+  }
+
+  &:visited {
+    color: currentColor; /* Нет специального цвета для посещённых ссылок */
+  }
+
+  &:active {
+    color: currentColor; /* Нет специального цвета для активной ссылки */
+  }
+}
+
+/* Специфический стиль для формы связи */
+.header .cf-link {
+  color: #fff !important; /* Обязательно белый цвет */
+  text-decoration: none;
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+

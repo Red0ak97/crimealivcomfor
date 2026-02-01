@@ -9,11 +9,19 @@
 
   .header-content {
     display: grid;
-    grid-template-columns: auto 1fr auto;
-    align-items: center;
+    grid-template-columns: 1fr; /* Одна колонка */
+    align-items: start; /* Верхнее выравнивание */
   }
 
-  /* ЛОГО + ТЕКСТ — СЛЕВА */
+  /* Контейнер для всей информации */
+  .header-info-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Равномерное распределение элементов */
+    gap: 24px; /* Интервал между элементами */
+  }
+
+  /* Логотип слева */
   .header-logo-container {
     margin-right: 12px;
 
@@ -23,17 +31,18 @@
     }
   }
 
+  /* Название организации идёт вслед за логотипом */
   .header-info {
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     align-items: flex-start;
   }
 
-  /* ТЕЛЕФОНЫ — ПО ЦЕНТРУ */
+  /* Телефонные номера */
   .header-phones {
-    justify-content: center; /* Изменение на центрирование */
-    display: flex;
+    display: inline-flex;
     gap: 24px;
+    margin-left: auto; /* Правое расположение */
 
     a {
       display: flex;
@@ -51,10 +60,11 @@
     }
   }
 
-  /* МЕНЮ СНИЗУ */
+
+  /* Меню навигации */
   .header-nav {
     margin-top: 20px;
-    position: relative; /* Добавляем относительное позиционирование */
+    position: relative;
 
     &::before {
       content: '';
@@ -86,3 +96,4 @@
     }
   }
 }
+

@@ -1,0 +1,189 @@
+.about-page {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  font-family: "Arial", sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Заголовок страницы */
+.about-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  color: #1a1a1a;
+  letter-spacing: 1px;
+}
+
+/* Вводный текст */
+.about-intro {
+  max-width: 950px;
+  margin: 0 auto 50px;
+  text-align: center;
+  line-height: 1.8;
+  font-size: 18px;
+  color: #444;
+}
+
+/* Секции */
+.about-section {
+  margin-top: 60px;
+  padding: 20px 10px;
+}
+
+/* Заголовки секций */
+.about-section-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #222;
+  position: relative;
+}
+
+.about-section-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #f05a28;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* Сетка для карточек со списками */
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  margin-top: 20px;
+}
+
+/* Карточка со списком */
+.about-card {
+  background-color: #fff;
+  padding: 30px 25px;
+  border-radius: 8px;
+  border: 1px solid #e1e1e1;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+}
+
+.about-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+}
+
+.about-card ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.about-card li {
+  margin-bottom: 12px;
+  line-height: 1.6;
+  font-size: 16px;
+  color: #555;
+  position: relative;
+}
+
+.about-card li::before {
+  content: '•';
+  color: #f05a28;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+/* Текстовые блоки (подход к работе) */
+.about-text {
+  max-width: 1000px;
+  margin: 0 auto 30px;
+  line-height: 1.8;
+  font-size: 17px;
+  color: #444;
+  text-align: justify;
+}
+
+/* Контактная форма — полностью прозрачная, без фона и тени */
+.contact-form-wrapper {
+  max-width: 900px;
+  width: 100%;
+  margin: 50px auto 0;
+  padding: 0;
+  background-color: transparent;
+  box-shadow: none;
+  box-sizing: border-box;
+}
+
+/* Адаптивность */
+@media (max-width: 1024px) {
+  .about-title {
+    font-size: 32px;
+  }
+
+  .about-section-title {
+    font-size: 22px;
+  }
+
+  .about-card {
+    padding: 25px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 28px;
+  }
+
+  .about-section-title {
+    font-size: 20px;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .about-card {
+    padding: 20px 15px;
+  }
+}
+
+.works-page {
+  padding: 60px 20px;
+  min-height: 100vh;
+
+  /* Градиентный фон */
+  background: linear-gradient(135deg, #f0f4f8 0%, #d9e2ec 100%);
+  /* Можно добавить анимацию градиента */
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Контактная форма отдельным блоком */
+.contact-form-wrapper {
+  max-width: none; /* Убираем ограничение по ширине родителя */
+  width: 100%;
+  margin: 60px 0 0; /* Отступ сверху, чтобы форма была ниже всего контента */
+  padding: 40px 20px;
+  background-color: rgba(224, 224, 224, 0.8); /* Полупрозрачный фон */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1); /* Легкая тень */
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}

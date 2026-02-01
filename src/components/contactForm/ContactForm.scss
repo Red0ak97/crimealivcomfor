@@ -2,7 +2,7 @@
 .contact-form {
   width: 100%; /* Заставляем форму занимать всю ширину */
   margin-top: 40px; /* Добавляем отступ сверху */
-  background-color: #e0e0e0; /* Фон на два тона темнее */
+  background-color: rgba(224, 224, 224, 0.8); /* Полупрозрачный серый фон */
   padding: 20px;
   display: flex;
   flex-direction: row-reverse; /* Меняем направление на вертикальное */
@@ -49,11 +49,12 @@
         width: 62%; /* Заставляем поля формы занимать всю ширину контейнера */
 
         &:focus {
-          border-color: #007bff;
-          box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+          border-color: grey;
+          box-shadow: 0 0 5px rgba(77, 77, 77, 0.5);
           outline: none;
         }
       }
     }
   }
 }
+
