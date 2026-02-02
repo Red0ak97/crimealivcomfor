@@ -1,0 +1,59 @@
+/* src/components/ContactForm.scss */
+.contact-form {
+  width: 100%; /* Заставляем форму занимать всю ширину */
+  margin-top: 40px; /* Добавляем отступ сверху */
+  background-color: #e0e0e0; /* Фон на два тона темнее */
+  padding: 20px;
+  display: flex;
+  flex-direction: row-reverse; /* Меняем направление на вертикальное */
+  align-items: left;
+
+  h2 {
+    margin-top: 0;
+  }
+
+  p {
+    margin-bottom: 10px;
+  }
+
+  .contact-info {
+    flex: 1;
+    margin-right: 20px;
+    width: 90%; /* Заставляем компонент занимать всю ширину */
+  }
+
+  .contact-form-container {
+    flex: 1;
+    margin-left: 20px;
+    margin-right: 20px; /* Добавляем отступ справа */
+    width: 90%; /* Заставляем компонент занимать всю ширину */
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+
+      label {
+        margin-bottom: 5px;
+        font-weight: bold;
+        display: block; /* Делаем метки блочными элементами */
+      }
+
+      input,
+      textarea {
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        transition: border-color 0.3s ease;
+        width: 62%; /* Заставляем поля формы занимать всю ширину контейнера */
+
+        &:focus {
+          border-color: grey;
+          box-shadow: 0 0 5px rgba(77, 77, 77, 0.5);
+          outline: none;
+        }
+      }
+    }
+  }
+}

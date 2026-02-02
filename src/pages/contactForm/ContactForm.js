@@ -8,8 +8,8 @@ const ContactForm = () => {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
 
-  const TELEGRAM_BOT_TOKEN = process.env.REACT_APP_TELEGRAM_BOT_TOKEN;
-  const CHAT_ID = process.env.REACT_APP_CHAT_ID;
+  const TELEGRAM_BOT_TOKEN = '8330054248:AAHJ92jNE08n9zcxQwNESOz-3tJz7auUp2g';
+  const CHAT_ID = '-5083923941';
 
   const handleSubmit = async (event) => {
     event.preventDefault();
