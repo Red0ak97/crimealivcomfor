@@ -1,13 +1,22 @@
 .works-page {
+
     padding: 60px 20px;
     min-height: 100vh;
     width: 100%;
-    background-color: #d1d1d2 !important; 
+    background-color: #d1d1d2 ;
 }
-
 .container {
   max-width: 1400px;
+
+  max-width: 1500px;
+
   margin: 0 auto;
+  padding: 60px 20px;
+  font-family: "Arial", sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  min-height: 100vh;
+  width: 100%;
 }
 
 .works-title {
@@ -95,6 +104,12 @@
   line-height: 1.6;
   color: #444;
   margin: 8px 0 0 0;
+}
+
+/* Чтобы форма внутри не центрировала текст */
+.works-page .contact-form,
+.works-page .contact-form * {
+  text-align: left;
 }
 
 /* Адаптив */

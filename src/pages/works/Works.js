@@ -177,10 +177,8 @@ const Works = () => {
         zoom={{ maxZoomPixelRatio: 3 }}
       />
 
-      {/* Контактная форма — ВНУТРИ страницы */}
-<div className="works-contact-form-wrapper">
-  <ContactForm />
-</div>
+      {/* Контактная форма */}
+      <ContactForm />
     </div>
   );
 };

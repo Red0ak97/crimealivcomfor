@@ -2,6 +2,9 @@
   max-width: 1500px;
   margin: 0 auto;
   padding: 60px 20px;
+  font-family: "Arial", sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
   text-align: center;
 }
 
@@ -58,18 +61,13 @@
   display: block;
   cursor: pointer;
 }
-.license-page {
-  max-width: 1500px;
-  margin: 0 auto;
-  padding: 60px 20px;
-  text-align: center;
-}
 
-/* ← Добавь это */
+/* Чтобы форма внутри не центрировала текст */
 .license-page .contact-form,
 .license-page .contact-form * {
   text-align: left;
 }
+
 .image-modal {
   position: fixed;
   inset: 0;
@@ -87,45 +85,33 @@
   object-fit: contain;
 }
 
-.works-page {
-  padding: 60px 20px;
-  min-height: 100vh;
+/* Адаптивность */
+@media (max-width: 1024px) {
+  .license-title {
+    font-size: 28px;
+  }
 
-  /* Градиентный фон */
-  background: linear-gradient(135deg, #f0f4f8 0%, #d9e2ec 100%);
-  /* Можно добавить анимацию градиента */
-  background-size: 400% 400%;
-  animation: gradientAnimation 15s ease infinite;
+  .license-section-title {
+    font-size: 20px;
+  }
+
+  .license-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
-@keyframes gradientAnimation {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
+@media (max-width: 768px) {
+  .license-page {
+    padding: 40px 15px;
+  }
 
-/* Контактная форма — отдельный независимый блок */
-.license-contact-form-wrapper {
-  width: 100%;
-  margin-top: 60px;
-  padding: 40px 20px;
+  .license-title {
+    font-size: 24px;
+  }
 
-  display: flex;
-  justify-content: center;
-
-  background-color: rgba(224, 224, 224, 0.8); /* тот же эффект, что в About */
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-  box-sizing: border-box;
-}
-
-/* Чтобы форма внутри не центрировала текст */
-.license-contact-form-wrapper .contact-form,
-.license-contact-form-wrapper .contact-form * {
-  text-align: left;
-}
-.license-content {
-  max-width: 1500px;
-  margin: 0 auto;
+  .license-section-title {
+    font-size: 18px;
+  }
 }
 
 

@@ -27,11 +27,11 @@ const License = () => {
       {/* Пакет 1 */}
       <section className="license-section">
         <h2 className="license-section-title">
-          Лицензии на осуществление строительных работ
+          Допуски и членство в СРО
         </h2>
 
         <div className="license-grid">
-          {['pack1-1', 'pack1-2', 'pack1-3', 'pack1-4'].map((img) => (
+          {['pack3-1', 'pack3-2', 'pack3-3'].map((img) => (
             <div className="license-card" key={img}>
               <img
                 src={`/images/licenses/${img}.jpg`}
@@ -45,7 +45,7 @@ const License = () => {
 
       {/* Пакет 2 */}
       <section className="license-section">
-        <h2 className="license-section-title">Допуски и членство в СРО</h2>
+        <h2 className="license-section-title">Приказ ГУ МЧС России по Республике Крым</h2>
 
         <div className="license-grid">
           {['pack2-1', 'pack2-2'].map((img) => (
@@ -63,11 +63,11 @@ const License = () => {
       {/* Пакет 3 */}
       <section className="license-section">
         <h2 className="license-section-title">
-          Иные разрешительные документы
+          Лицензии на осуществление строительных работ
         </h2>
 
         <div className="license-grid">
-          {['pack3-1', 'pack3-2', 'pack3-3'].map((img) => (
+          {['pack1-1', 'pack1-2', 'pack1-3', 'pack1-4'].map((img) => (
             <div className="license-card" key={img}>
               <img
                 src={`/images/licenses/${img}.jpg`}
@@ -86,10 +86,8 @@ const License = () => {
         </div>
       )}
 
-      {/* Контактная форма — ВНУТРИ страницы, как в About */}
-      <div className="contact-form-wrapper">
-        <ContactForm />
-      </div>
+      {/* Контактная форма */}
+      <ContactForm />
     </div>
   );
 };

@@ -51,7 +51,7 @@
   display: block;
   width: 60px;
   height: 3px;
-  background-color: #f05a28;
+  background-color: #333; /* Изменено на черный для черно-белой стилистики */
   margin: 10px auto 0;
   border-radius: 2px;
 }
@@ -81,6 +81,20 @@
   box-shadow: 0 15px 40px rgba(0,0,0,0.1);
 }
 
+.about-card-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.about-card-text {
+  line-height: 1.7;
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
 .about-card ul {
   padding-left: 20px;
   margin: 0;
@@ -96,7 +110,7 @@
 
 .about-card li::before {
   content: '•';
-  color: #f05a28;
+  color: #333; /* Изменено на черный для черно-белой стилистики */
   font-weight: bold;
   display: inline-block;
   width: 1em;
@@ -111,17 +125,6 @@
   font-size: 17px;
   color: #444;
   text-align: justify;
-}
-
-/* Контактная форма — полностью прозрачная, без фона и тени */
-.contact-form-wrapper {
-  max-width: 900px;
-  width: 100%;
-  margin: 50px auto 0;
-  padding: 0;
-  background-color: transparent;
-  box-shadow: none;
-  box-sizing: border-box;
 }
 
 /* Адаптивность */
@@ -156,34 +159,4 @@
   .about-card {
     padding: 20px 15px;
   }
-}
-
-.works-page {
-  padding: 60px 20px;
-  min-height: 100vh;
-
-  /* Градиентный фон */
-  background: linear-gradient(135deg, #f0f4f8 0%, #d9e2ec 100%);
-  /* Можно добавить анимацию градиента */
-  background-size: 400% 400%;
-  animation: gradientAnimation 15s ease infinite;
-}
-
-@keyframes gradientAnimation {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-/* Контактная форма отдельным блоком */
-.contact-form-wrapper {
-  max-width: none; /* Убираем ограничение по ширине родителя */
-  width: 100%;
-  margin: 60px 0 0; /* Отступ сверху, чтобы форма была ниже всего контента */
-  padding: 40px 20px;
-  background-color: rgba(224, 224, 224, 0.8); /* Полупрозрачный фон */
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1); /* Легкая тень */
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
 }
