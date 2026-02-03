@@ -25,10 +25,11 @@ const Header = () => {
               +7 (978) 481-55-64
             </a>
           </div>
-          {/* Новый контейнер для кнопки "Перезвоним" */}
+          {/* Новый контейнер для кнопки "Заказать консультацию" */}
           <div className="cf-link">
-            <Link to="/contact-form">Перезвоним</Link>
-            <FontAwesomeIcon icon={faPhoneAlt}/>
+            <Link to="/contact-form">Заказать консультацию</Link>
+            {/* Увеличенное изображение телефонной трубки */}
+            <img src="/images/iconphone.png" alt="Телефонная трубка" style={{width: '48px'}}/>
           </div>
         </div>
       </div>
@@ -45,4 +46,3 @@ const Header = () => {
 };
 
 export default Header;
-
