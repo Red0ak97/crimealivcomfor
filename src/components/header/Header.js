@@ -25,11 +25,13 @@ const Header = () => {
               +7 (978) 481-55-64
             </a>
           </div>
-          {/* Новый контейнер для кнопки "Заказать консультацию" */}
+          {/* Контейнер для кнопки "Заказать консультацию" */}
           <div className="cf-link">
-            <Link to="/contact-form">Заказать консультацию</Link>
-            {/* Увеличенное изображение телефонной трубки */}
-            <img src="/images/iconphone.png" alt="Телефонная трубка" style={{width: '48px'}}/>
+            {/* Теперь ссылка принимает дополнительный класс link-with-icon */}
+            <Link to="/contact-form" className="link-with-icon">
+              <span>Заказать консультацию</span>
+              <img src="/images/iconphone.png" alt="Телефонная трубка" style={{width: '48px'}}/>
+            </Link>
           </div>
         </div>
       </div>

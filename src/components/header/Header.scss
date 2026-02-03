@@ -1,4 +1,5 @@
 /* src/components/Header.scss */
+
 .header {
   background-color: #333;
   color: #fff;
@@ -60,6 +61,27 @@
     }
   }
 
+  /* Кнопка "Заказать консультацию" */
+  .cf-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px; /* Расстояние между текстом и иконкой */
+  }
+
+  /* Обработчик для самой ссылки */
+  .link-with-icon {
+    display: inline-flex; /* Горизонтальное расположение элементов */
+    align-items: center; /* Центрирование по вертикали */
+    gap: 10px; /* Между текстом и иконкой */
+
+    img {
+      width: 48px; /* Ширина иконки */
+    }
+
+    span {
+      white-space: nowrap; /* Чтобы текст не переносился */
+    }
+  }
 
   /* Меню навигации */
   .header-nav {
@@ -96,4 +118,3 @@
     }
   }
 }
-
