@@ -13,6 +13,23 @@ const Works = () => {
   const [index, setIndex] = useState(0);
 
   const projects = [
+        {
+      id: 8,
+      title: 'Воронцовский дворец | Алупка',
+      year: '2025',
+      description: '',
+      featured: true,
+      images: [
+        'images/ourworks/v1.jpg',
+        'images/ourworks/v2.jpg',
+        'images/ourworks/v3.jpg',
+        'images/ourworks/v4.jpg',
+        'images/ourworks/v5.jpg',
+        'images/ourworks/v6.jpg',
+        'images/ourworks/v7.jpg',
+      ],
+    },
+
     {
       id: 1,
       title: 'Караимская Кенасса | Симферополь',
@@ -101,6 +118,18 @@ const Works = () => {
         'images/ourworks/az7.jpg',
       ],
     },
+    {
+      id: 9,
+      title: 'Ласточкино гнездо | ',
+      year: '2025',
+      description: '',
+      images: [
+        'images/ourworks/l1.jpg',
+        'images/ourworks/new2.jpg',
+        'images/ourworks/new3.jpg',
+        'images/ourworks/new4.jpg',
+      ],
+    },
   ];
 
   const openProjectLightbox = (project) => {
@@ -127,7 +156,7 @@ const Works = () => {
         {projects.map((project) => (
           <div
             key={project.id}
-            className="work-card"
+            className={`work-card ${project.featured ? 'work-card--wide' : ''}`}
             role="button"
             tabIndex={0}
             onClick={() => openProjectLightbox(project)}
@@ -148,9 +177,9 @@ const Works = () => {
 
             <div className="work-info">
               <h3 className="work-title">{project.title}</h3>
-              {project.year && (
-                <p className="work-year">{project.year}</p>
-              )}
+
+              {project.year && <p className="work-year">{project.year}</p>}
+
               {project.description && (
                 <p className="work-description">{project.description}</p>
               )}
