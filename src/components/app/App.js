@@ -4,7 +4,7 @@ import About from '../../pages/about/About';
 import Home from '../../pages/home/Home'; // Импортируем страницы
 import License from '../../pages/license/License';
 import Works from '../../pages/works/Works';
-import ContactForm from '../contactForm/ContactForm';
+import ContactFormPage from '../../pages/contactForm/ContactForm';
 import Footer from '../footer/Footer';
 import Header from '../header/Header';
 import './App.scss';
@@ -18,7 +18,7 @@ const App = () => {
         <Route path="/license" element={<License />} />
         <Route path="/works" element={<Works />} />
         <Route path="/about" element={<About />} />
-        <Route path="/contact-form" element={<ContactForm />} />
+        <Route path="/contact-form" element={<ContactFormPage />} />
       </Routes>
       <Footer />
     </Router>
