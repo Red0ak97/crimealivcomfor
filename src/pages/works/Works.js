@@ -13,6 +13,29 @@ const Works = () => {
   const [index, setIndex] = useState(0);
 
   const projects = [
+    {
+      id: 10,
+      title: 'Ханский дворец | Бахчисарай',
+      year: '2025',
+      description: '',
+      featured: true,
+      images: [
+        'images/ourworks/vd1.png',
+        'images/ourworks/vd2.png',
+        'images/ourworks/vd3.png',
+        'images/ourworks/vd4.png',
+        'images/ourworks/vd5.png',
+        'images/ourworks/vd6.png',
+        'images/ourworks/vd7.png',
+        'images/ourworks/vd8.png',
+        'images/ourworks/vd9.png',
+        'images/ourworks/vd10.png',
+        'images/ourworks/vd11.png',
+        'images/ourworks/vd12.png',
+        'images/ourworks/vd13.png',
+
+      ],
+    },
         {
       id: 8,
       title: 'Воронцовский дворец | Алупка',
