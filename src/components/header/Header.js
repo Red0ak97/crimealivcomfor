@@ -16,13 +16,13 @@ const Header = () => {
             <h1>ООО «КРЫМЖИЛКОМФОРТ»</h1>
           </div>
           <div className="header-phones">
-            <a href="tel:+79781029328">
+            <a href="tel:+79786630849">
               <span className="phone-icon"><FontAwesomeIcon icon={faPhoneAlt}/></span>
-              +7 (978) 102-93-28
+              +7 (978) 663-08-49
             </a>
-            <a href="tel:+79784815564">
+            <a href="tel:+79780669919">
               <span className="phone-icon"><FontAwesomeIcon icon={faPhoneAlt}/></span>
-              +7 (978) 481-55-64
+              +7 (978) 066-99-19
             </a>
           </div>
           {/* Контейнер для кнопки "Заказать консультацию" */}
