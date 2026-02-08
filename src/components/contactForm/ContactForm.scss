@@ -6,7 +6,7 @@
   padding: 20px;
   display: flex;
   flex-direction: row-reverse; /* Меняем направление на вертикальное */
-  align-items: left;
+  align-items: flex-start;
 
   h2 {
     margin-top: 0;
@@ -55,6 +55,39 @@
         }
       }
     }
+  }
+}
+
+@media (max-width: 900px) {
+  .contact-form {
+    flex-direction: column;
+    gap: 20px;
+    padding: 16px;
+  }
+
+  .contact-form .contact-info,
+  .contact-form .contact-form-container {
+    width: 100%;
+    margin: 0;
+  }
+
+  .contact-form .contact-form-container {
+    order: 1;
+  }
+
+  .contact-form .contact-info {
+    order: 2;
+  }
+
+  .contact-form .contact-form-container form input,
+  .contact-form .contact-form-container form textarea {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-form {
+    padding: 12px;
   }
 }
 
