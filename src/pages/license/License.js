@@ -27,7 +27,7 @@ const License = () => {
       {/* Пакет 1 */}
       <section className="license-section">
         <h2 className="license-section-title">
-          Допуски и членство в СРО
+          Лицензия на осуществление деятельности по сохранению обьектов культурного наследия
         </h2>
 
         <div className="license-grid">
@@ -45,7 +45,7 @@ const License = () => {
 
       {/* Пакет 2 */}
       <section className="license-section">
-        <h2 className="license-section-title">Приказ ГУ МЧС России по Республике Крым</h2>
+        <h2 className="license-section-title">Лицензия МЧС России по Республике Крым</h2>
 
         <div className="license-grid">
           {['pack2-1', 'pack2-2'].map((img) => (

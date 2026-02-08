@@ -22,15 +22,7 @@ const Works = () => {
       images: [
         'images/ourworks/vd1.png',
         'images/ourworks/vd2.png',
-        'images/ourworks/vd3.png',
-        'images/ourworks/vd4.png',
-        'images/ourworks/vd5.png',
-        'images/ourworks/vd6.png',
-        'images/ourworks/vd7.png',
-        'images/ourworks/vd8.png',
         'images/ourworks/vd9.png',
-        'images/ourworks/vd10.png',
-        'images/ourworks/vd11.png',
         'images/ourworks/vd12.png',
         'images/ourworks/vd13.png',
 
@@ -102,18 +94,7 @@ const Works = () => {
         'images/ourworks/pl1.jpg',
       ],
     },
-    {
-      id: 5,
-      title: 'Ограждение 30 батареи | Севастополь',
-      year: '2024',
-      description: '',
-      images: [
-        'images/ourworks/30b1.jpg',
-        'images/ourworks/30b2.jpg',
-        'images/ourworks/30b3.jpg',
-        'images/ourworks/30b4.jpg',
-      ],
-    },
+
     {
       id: 6,
       title: 'Устройство кровли 30 батарея | Севастополь',
@@ -143,7 +124,7 @@ const Works = () => {
     },
     {
       id: 9,
-      title: 'Ласточкино гнездо | ',
+      title: 'Ласточкино гнездо | ЮБК ',
       year: '2025',
       description: '',
       images: [

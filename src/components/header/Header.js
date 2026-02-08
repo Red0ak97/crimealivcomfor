@@ -21,8 +21,8 @@ const Header = () => {
               +7 (978) 663-08-49
             </a>
             <a href="tel:+79780669919">
-              <span className="phone-icon"><FontAwesomeIcon icon={faPhoneAlt}/></span>
-              +7 (978) 066-99-19
+
+              Пн-Пт 9:00 -- 18:00
             </a>
           </div>
           {/* Контейнер для кнопки "Заказать консультацию" */}
