@@ -1,5 +1,6 @@
 // src/pages/License.js
 import { useState } from 'react';
+import { createPortal } from 'react-dom';
 import ContactForm from '../../components/contactForm/ContactForm';
 import './License.scss';
 
@@ -80,11 +81,17 @@ const License = () => {
       </section>
 
       {/* Модалка */}
-      {activeImage && (
-        <div className="image-modal" onClick={() => setActiveImage(null)}>
-          <img src={activeImage} alt="Лицензия" />
-        </div>
-      )}
+      {activeImage &&
+        createPortal(
+          <div className="image-modal" onClick={() => setActiveImage(null)}>
+            <img
+              src={activeImage}
+              alt="Лицензия"
+              onClick={(e) => e.stopPropagation()}
+            />
+          </div>,
+          document.body
+        )}
 
       {/* Контактная форма */}
       <ContactForm />

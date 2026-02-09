@@ -25,25 +25,3 @@
   width: 30%; /* Заставляем компонент занимать 30% ширины */
   box-sizing: border-box; /* Учитываем внутренние отступы и границы */
 }
-
-@media (max-width: 1024px) {
-  .home {
-    padding: 16px 16px 0;
-  }
-
-  .content-container {
-    flex-direction: column;
-  }
-
-  .about-company {
-    width: 100%;
-    margin-right: 0;
-  }
-}
-
-@media (max-width: 768px) {
-  .home {
-    padding: 12px 12px 0;
-  }
-}
-

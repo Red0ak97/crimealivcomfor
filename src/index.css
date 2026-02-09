@@ -7,8 +7,6 @@ body {
   background-color: #ffffff; /* Убираем прозрачность */
   position: relative; /* Добавляем относительное позиционирование */
   box-sizing: border-box; /* Учитываем внутренние отступы и границы */
-  min-height: 100vh;
-  -webkit-text-size-adjust: 100%;
 }
 
 section {
@@ -114,30 +112,6 @@ a {
 
   &:active {
     color: currentColor; /* Нет специального цвета для активной ссылки */
-  }
-}
-
-img,
-picture,
-video,
-canvas,
-svg {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-@media (max-width: 768px) {
-  .button {
-    width: 100%;
-    max-width: 320px;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 16px;
-  }
-
-  section {
-    padding: 8px;
   }
 }
 
