@@ -110,7 +110,7 @@ Email: ${email}
           <strong>Номер телефона:</strong> +7 (978) 663-08-49
         </p>
         <p>
-          <strong>Email:</strong> stroymash2015@yandex.ru
+          <strong>Email:</strong> kzhksmr@gmail.com
         </p>
         <p>
           <strong>Юридический адрес:</strong> 295015, РФ, Республика Крым, г.
