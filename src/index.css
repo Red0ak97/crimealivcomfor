@@ -7,6 +7,9 @@ body {
   background-color: #ffffff; /* Убираем прозрачность */
   position: relative; /* Добавляем относительное позиционирование */
   box-sizing: border-box; /* Учитываем внутренние отступы и границы */
+  min-height: 100vh;
+  overflow-x: hidden;
+  -webkit-text-size-adjust: 100%;
 }
 
 section {
@@ -115,6 +118,16 @@ a {
   }
 }
 
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /* Специфический стиль для формы связи */
 .header .cf-link {
   color: #fff !important; /* Обязательно белый цвет */
@@ -126,5 +139,19 @@ a {
 
   &:hover {
     transform: scale(1.1);
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 8px;
+  }
+
+  .button {
+    width: 100%;
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
   }
 }

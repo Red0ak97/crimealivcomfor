@@ -27,3 +27,18 @@
   font-size: 18px;
   color: #444;
 }
+
+@media (max-width: 768px) {
+  .contact-page {
+    padding: 40px 12px;
+  }
+
+  .contact-title {
+    font-size: 28px;
+  }
+
+  .contact-intro {
+    font-size: 16px;
+    margin-bottom: 28px;
+  }
+}
